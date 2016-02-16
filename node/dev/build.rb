@@ -4,7 +4,7 @@ require 'open3'
 from = 'edyn/node:dev'
 
 # TEMP: using mhart version
-cmd = "docker build -t #{from} -f Dockerfile.mhart ."
+cmd = "docker build -t #{from} ."
 
 # stream this one since build can take a bit
 Open3.popen2e(cmd) do |stdin, stdout_stderr, wait_thread|
