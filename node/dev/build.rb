@@ -1,7 +1,7 @@
 
 require 'open3'
 
-from = 'iron/node:dev'
+from = 'edyn/node:dev'
 
 # TEMP: using mhart version
 cmd = "docker build -t #{from} -f Dockerfile.mhart ."
