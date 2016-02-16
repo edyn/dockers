@@ -28,6 +28,6 @@ p v
 3.times do |i|
   to = "edyn/node:#{v}-dev"
   puts "Tagging #{from} with #{to}"
-  p `docker tag #{from} #{to}`
+  p `docker tag #{from} #{to} -f`
   v = v[0...v.rindex('.')] if i != 2
 end
